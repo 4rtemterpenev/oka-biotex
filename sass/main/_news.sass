@@ -1,0 +1,82 @@
+.news
+    padding-top: 100px
+    padding-bottom: 100px
+    &-block
+        display: flex
+        flex-direction: column
+        &__names
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            margin-bottom: 50px
+        &__tag
+            font-family: 'Manrope', sans-serif
+            font-weight: 600
+            font-style: normal
+            font-size: 28px
+            line-height: 35px
+            color: #404596
+            text-transform: uppercase
+        &__link
+            text-decoration: none
+            color: #636363
+            font-family: 'Manrope', sans-serif
+            font-size: 18px
+            font-style: normal
+            line-height: 25px
+            &:hover
+                color: #404596
+        &__items
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+            a
+                text-decoration: none
+        &__item
+            width: calc( 25% - 20px )      
+        &__title
+            margin-top: 20px
+            margin-bottom: 10px
+            font-family: 'Manrope', sans-serif
+            font-weight: 500
+            font-style: normal
+            font-size: 18px
+            line-height: 25px
+            color: #0C0C0C
+        &__date
+            font-family: 'Manrope', sans-serif
+            font-weight: 300
+            font-size: 18px
+            line-height: 25px
+            color: #0C0C0C
+
+@media ( max-width: 1170px )
+    .news-block__item
+        width: calc( 50% - 15px )
+        margin-bottom: 40px
+    .news-block__image img
+        width: 100%
+@media ( max-width: 500px )
+    .news-block__title
+        font-size: 16px
+        line-height: 23px
+    .news-block__date
+        font-size: 16px
+        line-height: 21px
+    .news
+        padding-top: 50px
+        padding-bottom: 50px
+@media ( max-width: 450px )
+    .news-block__items
+        flex-direction: column
+    .news-block__item
+        width: 100%
+    .news-block__tag
+        font-size: 22px
+        line-height: 27px
+    .news-block__link
+        font-size: 16px
+        line-height: 21px
+    .news-block__names
+        margin-bottom: 25px

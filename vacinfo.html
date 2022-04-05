@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+    <div class="head">
+      <div class="wrap">
+        <div class="head-block">
+          <a href="index.html">
+            <div class="head-block__logo">
+              <img src="img/icons/icon__logo.svg" alt="">
+            </div>
+          </a>
+          <nav class="head-block__menu">
+            <ul>
+              <li><a href="history.html">О компании</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="acadezin.html">Акадезин</a></li>
+              <li><a href="acid.html">Гиалуроновая кислота</a></li>
+            </ul>
+          </nav>
+          <div class="head-block__lang">
+            <span class="language">RUS</span>
+          </div>
+          <div class="burger">
+            <a href="#" class="menu-btn">
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="menu">
+    <nav>
+        <span class="js-menu-nav_about">О компании</span>
+          <div class="js-menu-nav_aboutBl">
+            <a href="history.html">Общие сведения</a>
+            <a href="team.html">Команда</a>
+            <a href="technical.html">Техническая база</a>
+            <a href="vacancy.html">Вакансии</a>
+            <a href="contact.html">Контакты</a>
+          </div>
+        <a href="news.html">Новости</a>
+        <a href="acadezin.html">Акадезин</a>
+        <a href="acid.html">Гиалуроновая кислота</a>
+    </nav>
+  </div>
+  <section class="vacform">
+    <div class="wrap">
+      <div class="vacform-block">
+        <a href="vacancy.html" class="vacform-block__btn"><img src="img/icons/icon-back.svg" alt=""></a>
+        <span class="vacform-block__title">Отклик на вакансию “Бухгалтер на первичную документацию”</span>
+        <form action="#" class="form-block" id="form-block">
+          <div class="form-block__action vac">
+            <div class="form-block__item inputs">
+              <input type="text" class="name check" id="name" name="cname" placeholder="Как к вам обращаться">
+              <input type="text" class="name check" id="email" name="cemail" placeholder="Контактный e-mail">
+              <input type="text" class="name check" id="cphone" name="cphone" placeholder="Контактный телефон">
+            </div>
+            <div class="form-block__item textareas vacan">
+              <textarea name="area" id="" cols="30" rows="10" placeholder="Напишите нам" minlength="10" maxlength="100"></textarea>
+            </div>
+          </div>
+            <div class="form-block__item submit">
+              <input type="submit" value="Отправить" href="vacsuc.html" id="submit" class="form-block__btn disabled">
+              <div class="form-block__check">
+                <input type="checkbox" id="check" name="check" checked>
+                <label for="check" class="form-block__label vacancy">Нажимая кнопку “отправить” Вы соглашаетесь на обработку
+                  персональных данных.</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="wrap">
+        <div class="footer-block">
+          <span class="title">2021 «Центр трансфера биотехнологий ОКА-Биотех»</span>
+        </div>
+      </div>
+    </div>
+  </footer>	
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>

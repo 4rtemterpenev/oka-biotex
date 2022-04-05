@@ -1,0 +1,125 @@
+.sistem
+  padding-top: 70px
+  padding-bottom: 70px
+  &-block
+    display: flex
+    flex-direction: row
+    &__main
+      margin-right: 80px
+      p
+        font-family: 'Manrope', sans-serif
+        font-weight: 300
+        font-style: normal
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 50px
+        &:last-child
+          margin-bottom: 0
+    &__list
+      list-style: none
+      li
+        margin-left: 20px
+        position: relative
+        font-family: 'Manrope', sans-serif
+        font-weight: 300
+        font-style: normal
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 30px
+      li::before
+        position: absolute
+        content: ''
+        top: 8px
+        left: -18px
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background-color: #404596
+    &__title
+      font-family: 'Manrope', sans-serif
+      font-weight: 600
+      font-style: normal
+      font-size: 28px
+      line-height: 34px
+      color: #404596
+      display: block
+      text-transform: uppercase
+      margin-bottom: 10px
+    &__date
+      font-family: 'Manrope', sans-serif
+      font-weight: 300
+      font-style: normal
+      font-size: 14px
+      line-height: 19px
+      color: #636363
+      display: block
+      margin-bottom: 30px
+    &__picture
+      margin-bottom: 20px
+    &__name
+      font-family: 'Manrope', sans-serif
+      font-weight: 500
+      font-size: 18px
+      font-style: normal
+      line-height: 26px
+      color: #0C0C0C
+      display: block
+      margin-bottom: 10px
+    &__number
+      font-family: 'Manrope', sans-serif
+      font-weight: 300
+      font-size: 18px
+      line-height: 24px
+      color: #0C0C0C
+    &__item
+      margin-bottom: 30px
+    &__news a 
+      text-decoration: none
+    &__container
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-bottom: 10px
+      img
+        margin-right: 10px
+      span
+        font-family: 'Manrope', sans-serif
+        font-weight: 300
+        font-size: 14px
+        line-height: 19px
+        color: #0C0C0C
+    
+
+
+.fold
+  background-color: #F8F8F8
+  padding: 24px
+
+
+
+@media (max-width: 1200px)
+  .sistem-block__main
+    width: 70%
+    margin-right: 30px
+    img
+      width: 100%
+@media (max-width: 960px)
+  .sistem-block__news
+    display: none
+  .sistem-block__main
+    width: 100%
+@media (max-width: 475px)
+  .sistem-block__title
+    font-size: 22px
+    line-height: 27px
+  .sistem-block__main p
+    font-size: 16px
+    line-height: 22px
+    margin-bottom: 20px
+
+
+hr
+  height: 10px
+  background-color: #fafafa

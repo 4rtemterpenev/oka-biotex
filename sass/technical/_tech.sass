@@ -1,0 +1,53 @@
+.technical-title
+	font-family: 'Manrope',sans-serif
+	font-weight: 500
+	font-style: normal
+	font-size: 28px
+	line-height: 34px
+	color: #404596
+	display: block
+	margin-bottom: 15px
+.technical-text
+	font-family: 'Manrope',sans-serif
+	font-weight: 300
+	font-size: 18px
+	line-height: 24px
+	font-style: normal
+	color: #0C0C0C
+	width: 475px
+	margin-bottom: 50px
+	display: block
+.technical-item
+	padding-bottom: 70px
+	&:last-child
+		padding-bottom: 0px	
+.technical-images
+	flex-wrap: wrap
+	display: flex
+	justify-content: space-between
+	img
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+
+.image__hidden
+	display: flex
+
+
+@media (max-width: 1000px)
+	.vis
+		display: none
+	.technical-text
+		width: 100%
+@media (max-width: 550px)
+	.technical-images img
+		width: calc( 50% - 10px )
+	.big
+		width: 100% !important
+	.technical-item
+		padding-bottom: 40px
+	.technical-text
+		font-size: 16px
+		line-height: 22px
+
+

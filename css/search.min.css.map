@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/search/search.sass"
+    ],
+    "names": [],
+    "file": "search.min.css"
+}

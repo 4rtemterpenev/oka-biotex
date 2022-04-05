@@ -1,0 +1,42 @@
+.skolkovo
+  padding-top: 50px
+  padding-bottom: 100px
+  &-block
+    display: flex
+    flex-direction: row
+    align-items: center
+    width: 100%
+    &__image
+      margin-right: 30px
+    &__text
+      font-family: 'Manrope', sans-serif
+      font-weight: 300
+      font-style: normal
+      color: #404596
+      line-height: 30px
+      font-size: 24px
+      width: 100%
+
+
+
+@media (max-width: 1000px)
+  .skolkovo-block__text
+    font-size: 20px
+    line-height: 24px
+
+
+@media (max-width: 700px)
+  .skolkovo
+    padding-bottom: 60px
+    padding-top: 50px
+  .skolkovo-block
+    flex-direction: column
+    align-items: start
+  .skolkovo-block__image
+    margin-bottom: 20px
+    width: 100%
+    img
+      width: 20%
+  .skolkovo-block__text
+    font-size: 18px
+    line-height: 22px

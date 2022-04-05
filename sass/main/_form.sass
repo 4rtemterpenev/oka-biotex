@@ -1,0 +1,170 @@
+.form
+    padding-bottom: 100px
+    padding-top: 100px
+    background-color: #C4DFBC
+    &-block
+        display: flex
+        flex-direction: column
+        &__send
+            text-transform: uppercase
+            margin-bottom: 46px
+            font-family: 'Manrope', sans-serif
+            font-weight: 600
+            font-style: normal
+            font-size: 28px
+            line-height: 34px
+            color: #404596
+        &__action
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+        &__item
+            width: calc( 33% - 30px )
+            height: 200px
+        &__item.inputs
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__check
+            display: flex
+            flex-direction: row
+            align-items: center
+            input
+                margin-right: 20px
+        &__btn
+            width: 200px
+            height: 45px
+            border-radius: 30px
+            border: 1px solid #0C0C0C
+            font-family: 'Manrope', sans-serif
+            font-weight: 500
+            font-size: 18px
+            line-height: 25px
+            font-style: normal
+            margin-bottom: 30px
+            cursor: pointer
+            color: #0C0C0C
+            transition: 0.3s
+            background-color: rgba(255,255,255,0)
+            &:hover
+                background-color: #404596
+                transition: 0.3s
+                color: #ffffff
+        &__label
+            font-family: 'Manrope', sans-serif
+            font-weight: 300
+            font-style: normal
+            font-size: 18px
+            line-height: 25px
+            color: #636363
+
+
+.inputs input
+    border: none
+    background-color: rgba(0,0 ,0 ,0 )
+    border-bottom: 1px solid #0C0C0C
+    padding: 16px 0px 16px 0px
+    font-family: 'Manrope', sans-serif
+    font-weight: 300
+    font-size: 18px
+    line-height: 24px
+    width: 100%
+    &::placeholder
+        font-family: 'Manrope', sans-serif
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
+        font-size: normal
+.textareas textarea
+    border: none
+    background-color: rgba(0,0 ,0 ,0 )
+    resize: none
+    border-bottom: 1px solid #0C0C0C
+    width: 100%
+    font-family: 'Manrope', sans-serif
+    font-weight: 300
+    height: 184px
+    font-size: 18px
+    line-height: 24px
+    padding: 16px 0px 0px 0px
+    &::placeholder
+        font-family: 'Manrope', sans-serif
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
+        font-size: normal
+.submit
+    display: flex
+    flex-direction: column
+    justify-content: center
+    cursor: pointer
+.disabled
+    background-color: rgba(255,255,255,0)
+    cursor: pointer
+    border: 1px solid #636363
+    color: #636363
+    &:hover
+        background-color: rgba(255,255,255,0)
+        color: #636363  
+.vac
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+.vacan
+    margin-left: 30px
+.vacancy
+    width: 700px
+    display: block
+    text-align: left
+textarea.error
+    border-bottom: 1px solid red
+.hide
+    display: none
+
+
+@media (max-width: 900px)
+    .hide
+        display: flex
+    .vision
+        display: none
+    .form-block__item
+        width: calc( 50% - 20px )
+@media (max-width: 700px)
+    .form-block__label
+        font-size: 16px
+        line-height: 21px
+@media (max-width: 600px)
+    .form
+        padding-top: 50px
+        padding-bottom: 50px
+    .form-block__send
+        font-size: 22px
+        line-height: 27px
+        margin-bottom: 40px
+    .form-block__action
+        flex-direction: column
+    .form-block__item
+        width: 100%
+    .submit
+        margin-top: 40px
+    .inputs input::placeholder
+        font-size: 16px
+        line-height: 21px
+    .textareas textarea::placeholder
+        font-size: 16px
+        line-height: 21px
+    .form-block__item.inputs
+    .textareas
+        height: 40px
+        textarea
+            height: 100%
+            padding-top: 16px
+            overflow: hidden
+
+
+
+input::checked
+    display: none
+
+
+    

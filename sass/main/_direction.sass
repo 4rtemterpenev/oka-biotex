@@ -1,0 +1,55 @@
+.direction-block
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-top: 100px
+    padding-bottom: 100px
+    &__item1
+        width: 30%
+        font-family: 'Manrope'
+        font-weight: 500
+        font-style: normal
+        font-size: 28px
+        line-height: 34px
+        color: #404596
+    &__item2
+        width: 30%
+        height: 140px
+        padding: 25px 0px 0px 30px
+        background-color: #C4DFBC
+        font-family: 'Manrope', sans-serif
+        font-weight: 500
+        font-size: 18px
+        color: #0C0C0C
+        line-height: 24px
+        text-decoration: none
+        &:hover
+            color: #404596
+
+
+@media ( max-width: 1040px )
+    .direction-block__item2
+        width: 25%
+        height: 100px
+        flex-wrap: wrap
+@media ( max-width: 768px )
+    .direction-block__item1
+        font-size: 16px
+    .direction-block__item2
+        padding: 15px 0px 0px 20px
+
+@media ( max-width: 630px )
+    .direction-block
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        padding-top: 60px
+        padding-bottom: 60px
+    .direction-block__item1
+        width: 100%
+        margin-bottom: 15px
+    .direction-block__item2
+        width: 90%
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0

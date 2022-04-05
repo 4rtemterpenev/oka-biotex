@@ -1,0 +1,94 @@
+.acadezin
+  &-block
+    padding-top: 70px
+    h2
+      font-family: 'Manrope', sans-serif
+      font-weight: 600
+      font-size: 65px
+      line-height: 88px
+      color: #0C0C0C
+    &__subtitle
+      font-family: 'Manrope', sans-serif
+      font-weight: 300
+      font-size: 20px
+      line-height: 27px
+      color: #404596
+    &__item
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+    &__text p
+      font-family: 'Manrope', sans-serif
+      font-weight: 300
+      font-style: normal
+      font-size: 18px
+      line-height: 24px
+      color: #0C0C0C
+    &__text
+      width: calc( 50% - 30px )
+    &__textik
+      width: 50%
+    &__textik p
+      font-family: 'Manrope', sans-serif
+      font-weight: 300
+      font-style: normal
+      font-size: 18px
+      line-height: 24px
+      color: #0C0C0C
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+    &__image
+      width: calc( 50% - 30px )
+      text-align: center
+      img
+        max-width: 100%
+.show
+  display: none
+
+
+@media (max-width: 800px)
+  .acadezin-block__item
+    flex-direction: column
+    margin-bottom: 40px
+  .show
+    display: flex
+  .shit
+    display: none
+  .acadezin-block__image
+    width: 60%
+  .acadezin-block__text
+    width: 100%
+  .acadezin-block__textik
+    width: 100%
+@media (max-width: 550px)
+  .acadezin-block h2
+    font-size: 36px
+    line-height: 49px
+    margin-bottom: 15px
+  .acadezin-block__subtitle
+    font-size: 18px
+    line-height: 24px
+    margin-bottom: 30px
+    display: block
+  .acadezin-block__image
+    width: 100%
+@media (max-width: 425px)
+  .acadezin-block
+    padding-top: 0px
+  .acadezin-block h2
+    font-size: 36px
+    line-height: 49px
+    margin-bottom: 15px
+  .acadezin-block__subtitle
+    font-size: 18px
+    line-height: 24px
+    margin-bottom: 30px
+    display: block
+  .acadezin-block p
+    font-size: 16px
+    line-height: 22px

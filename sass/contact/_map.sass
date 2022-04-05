@@ -1,0 +1,110 @@
+.map
+  padding-top: 70px
+  &-block
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-bottom: 60px
+    &__info
+      width: calc( 50% - 30px )
+    &__title
+      font-family: 'Manrope', sans-serif
+      font-weight: 500
+      font-style: normal
+      font-size: 28px
+      line-height: 34px
+      color: #404596
+      margin-bottom: 30px
+      display: block
+    &__attr
+      font-family: 'Manrope', sans-serif
+      font-weight: 300
+      font-style: normal
+      font-size: 18px
+      line-height: 24px
+      color: #0C0C0C
+      display: block
+    &__items
+      display: flex
+      flex-direction: row
+    &__item
+      display: flex
+      flex-direction: column
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+      a
+        text-decoration: none
+        font-family: 'Manrope', sans-serif
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
+        color: #0C0C0C
+        margin-bottom: 15px
+    &__attribute
+      font-family: 'Manrope', sans-serif
+      font-weight: 500
+      font-size: 18px
+      line-height: 24px
+      color: #0C0C0C
+      margin-right: 15px
+      margin-bottom: 15px
+    &__karta
+      width: 50%
+.contact
+  margin-bottom: 40px 
+.vacform-block__title
+  margin-bottom: 40px
+.con
+  margin-top: 0
+
+
+@media (max-width: 850px)
+  .map-block__title
+    font-size: 22px
+    line-height: 27px
+  .map-block__item a
+    font-size: 16px
+    line-height: 22px
+  .map-block__attribute
+    font-size: 16px
+    line-height: 22px
+  .map-block__attr
+    font-size: 16px
+    line-height: 22px
+
+
+@media (max-width: 770px)
+  .map-block
+    flex-direction: column
+    &__info
+      width: 100%
+    &__karta
+      width: 100%
+  .vacform-block__title
+    font-size: 22px
+    line-height: 27px
+  .vacform
+    width: 100%
+
+
+@media (max-width: 650px)
+  .vac
+    flex-direction: column
+  .contact
+    width: 100%
+  .vacan
+    margin-left: 0
+  .contact
+    margin-bottom: 20px
+    &:last-child
+  .form-block__item.ff textarea
+    padding-bottom: 16px
+  .vacan
+    height: 30px
+    textarea
+      height: 100%
+      overflow: hidden
+@media (max-width: 420px)
+  .vacform-block
+    padding-bottom: 30px

@@ -1,0 +1,49 @@
+.hero
+    height: 360px
+    display: flex
+    align-items: center
+    &-block
+        display: flex
+        flex-direction: column
+        &__title
+            font-size: 28px
+            line-height: 38px
+            color: #404596
+            margin-bottom: 5px
+            font-family: 'Manrope', sans-serif
+            font-weight: 300
+        &__subtitle
+            font-size: 65px
+            line-height: 88px
+            font-family: 'Manrope', sans-serif
+            font-weight: 600
+            font-style: normal
+            margin-bottom: 30px
+        &__button a
+            padding: 10px 30px 10px 30px
+            background-color: #C4DFBC
+            border-radius: 30px
+            text-decoration: none
+            text-transform: uppercase
+            font-family: 'Manrope', sans-serif
+            font-weight: 500
+            font-size: 18px
+            line-height: 25px
+            color: #0C0C0C
+            transition: 0.3s
+            &:hover
+                color: #ffffff
+                background-color: #404596
+                transition: 0.3s
+
+
+
+@media ( max-width: 1200px )
+    .wrap
+        width: 90%
+@media ( max-width: 550px)
+    .hero-block__title
+        font-size: 22px
+    .hero-block__subtitle
+        font-size: 36px
+        line-height: 49px

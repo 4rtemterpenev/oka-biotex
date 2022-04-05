@@ -1,0 +1,233 @@
+.info-block
+	display: flex
+	flex-direction: row
+	padding-top: 70px
+	padding-bottom: 70px
+	border-bottom: 1px solid #C4DFBC
+	&__menu
+		display: flex
+		flex-direction: column
+		width: 250px
+		position: fixed
+		top: 168px
+		span
+			font-family: 'Manrope', sans-serif
+			font-size: 32px
+			font-style: normal
+			line-height: 43px
+			font-weight: 500
+			color: #0C0C0C
+			display: block
+			margin-bottom: 32px
+	&__link
+		text-decoration: none
+		font-family: 'Manrope', sans-serif
+		font-size: 16px
+		font-weight: 300
+		line-height: 22px
+		color: #0C0C0C
+		font-style: normal
+		margin-bottom: 20px
+		transition: 0.3s
+		&:last-child
+			margin-bottom: 0
+		&:hover
+			color: #404596
+			transition: 0.3s
+	&__content
+		width: 825px
+		display: flex
+		flex-direction: column
+		margin-left: auto
+	&__text p 
+		margin-bottom: 20px
+		font-family: 'Manrope', sans-serif
+		font-weight: 300
+		font-size: 18px
+		line-height: 24px
+		font-style: normal
+		color: #0C0C0C
+		&:last-child
+			margin-bottom: 0
+	&__images
+		padding-top: 50px
+		display: flex
+		flex-direction: row
+		img
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+	&__title
+		font-family: 'Manrope', sans-serif
+		font-weight: 600
+		font-size: 28px
+		line-height: 34px
+		font-style: normal
+		color: #404596
+		text-transform: uppercase
+		margin-bottom: 30px
+		display: block	
+	&__item
+		margin-bottom: 50px
+		display: flex
+		flex-direction: row		
+		&:last-child
+			margin-bottom: 0
+	&__team
+		padding-bottom: 70px
+		border-bottom: 1px solid #C4DFBC
+	&__about
+		display: flex
+		flex-direction: column
+		p
+			font-family: 'Manrope', sans-serif
+			font-weight: 300
+			font-size: 18px
+			line-height: 24px
+			font-style: normal
+			color: #0C0C0C
+	&__photo
+		margin-right: 25px
+	&__name
+		font-family: 'Manrope', sans-serif
+		font-weight: 500
+		font-style: normal
+		font-size: 28px
+		line-height: 34px
+		color: #404596
+		margin-bottom: 8px
+	&__prof
+		font-family: 'Manrope', sans-serif
+		font-weight: 300
+		font-style: normal
+		font-size: 14px
+		line-height: 19px
+		color: rgba(0, 0, 0, 0.5)
+		margin-bottom: 14px
+	&__employee
+		width: calc( 33% - 30px )
+	&__employees
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin-bottom: 50px
+		flex-wrap: wrap
+		&:last-child
+			margin-bottom: 0
+	&__squad
+		padding-top: 70px
+		padding-bottom: 70px
+	&__surname
+		font-family: 'Manrope', sans-serif
+		font-weight: 600
+		color: #404596
+		font-size: 16px
+		line-height: 21px
+		margin-bottom: 8px
+		display: block
+	&__information p
+		font-family: 'Manrope', sans-serif
+		font-weight: 300
+		font-size: 16px
+		line-height: 21px
+		font-style: normal
+		color: #0C0C0C
+		margin-bottom: 8px
+	&__proffesion
+		font-family: 'Manrope', sans-serif
+		font-weight: 300
+		font-size: 14px
+		line-height: 19px
+		font-style: normal
+		color: #636363
+	&__picture
+		margin-bottom: 15px
+	&__images
+		display: none
+.current
+	font-weight: 500
+	&:hover
+		color: #0C0C0C
+
+
+.swiper
+	width: 100%
+	height: 200px
+	display: none
+
+.swiper-wrapper
+	width: 190%
+	height: 100%
+.swiper-slide
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 170px
+
+.swiper-slide img
+	height: 100%
+	width: 100%
+	object-fit: cover
+
+.swiper-pagination
+	width: 100%
+	height: 10px
+	justify-content: center
+	display: flex
+	margin-top: 10px
+	align-items: center
+
+.swiper-pagination-bullet
+	background-color: #636363
+	width: 6px
+	height: 6px
+.swiper-pagination-bullet-active
+	width: 8px
+	height: 8px
+
+@media (max-width: 1150px)
+	.info-block__content
+		width: 70%
+	.info-block__images
+		display: none
+
+	
+@media (max-width: 950px)
+	.info-block__menu
+		display: none
+	.info-block__content
+		width: 100%
+	.info-block
+		padding-top: 30px
+@media (max-width: 670px)
+	.info-block
+		padding-top: 40px
+		padding-bottom: 40px
+	.info-block__employees
+		flex-direction: column
+	.info-block__employee
+		width: 100%
+		margin-bottom: 40px
+
+@media (max-width: 650px)
+	.info-block__item
+		flex-direction: column
+
+@media (max-width: 475px)
+	.swiper
+		display: block
+	.uni
+		width: 100%
+	.info-block__text
+		width: 90%
+		margin: 0 auto
+	.swiper-slide
+		width: 88vw !important	
+		margin-right: 5px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.swiper
+		width: 90%
+		margin: 0 auto

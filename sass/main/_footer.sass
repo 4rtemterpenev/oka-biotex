@@ -1,0 +1,29 @@
+.footer
+    height: 85px
+    display: flex
+    align-items: center
+    justify-content: center
+    &-block
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+.title
+    font-family: 'Manrope', sans-serif
+    font-weight: 300
+    font-size: 18px
+    line-height: 25px
+    color: #0C0C0C
+    font-style: normal
+    margin-right: 10px
+    text-align: center
+    &:last-child
+        margin-right: 0
+    &:hover
+        border-bottom: 1px solid black
+
+
+@media (max-width: 500px)
+    .title
+        font-size: 16px
+        line-height: 21px
